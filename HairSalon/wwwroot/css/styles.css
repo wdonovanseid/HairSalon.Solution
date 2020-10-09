@@ -1,9 +1,13 @@
 body {
-  color: white;
-  background: blue;
+  color: black;
+  background: lightblue;
   font-family: Times;
   font-weight: bolder;
   padding-bottom: 500px;
+}
+
+.card {
+  background-color: beige;
 }
 
 div#footer.card {

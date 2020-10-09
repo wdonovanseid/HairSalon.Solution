@@ -5,7 +5,8 @@
 @using HairSalon.Models;
 @model List<HairSalon.Models.Stylist>;
 
-<h1>Stylists</h1>
+<h2>Stylists</h2>
+<hr />
 
 <div class="box">
   <div class="inner-box">
@@ -20,4 +21,6 @@
   </div>
 </div>
 
-<p>@Html.ActionLink("Add new Stylist", "Create")</p>
+<div class="card">
+  <p>@Html.ActionLink("Add new Stylist", "Create")</p>
+</div>

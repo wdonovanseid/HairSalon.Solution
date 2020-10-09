@@ -7,6 +7,7 @@
 
 <h2>@Html.DisplayFor(model => model.Name)</h2>
 <hr />
+
 <table class="set-table">
   <tr>
     <td>@Html.DisplayNameFor(model => model.Specialty):</td>
@@ -31,6 +32,8 @@
   </div>
 </div>
 
-<p>@Html.ActionLink("Add new client", "Create", "Clients")</p>
-<p>@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>
+<div class="card">
+  <p>@Html.ActionLink("Add new client", "Create", "Clients")</p>
+  <p>@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</p>
+  <p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>
+</div>
