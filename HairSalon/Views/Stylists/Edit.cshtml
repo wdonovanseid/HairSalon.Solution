@@ -1,0 +1,29 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h2>Edit</h2>
+
+<h4>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.StylistId)
+  <table class="set-table">
+    <tr>
+      <td>@Html.LabelFor(model => model.Name)</td>
+      <td>@Html.EditorFor(model => model.Name, new { @required = "required"})</td>
+    </tr>
+    <tr>
+      <td>@Html.LabelFor(model => model.Specialty)</td>
+      <td>@Html.EditorFor(model => model.Specialty)</td>
+    </tr>
+    <tr>
+      <td>@Html.LabelFor(model => model.Details)</td>
+      <td>@Html.EditorFor(model => model.Details)</td>
+    </tr>
+  </table>
+  <input type="submit" value="Save" />
+}
