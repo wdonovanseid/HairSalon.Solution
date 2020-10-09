@@ -86,5 +86,5 @@ Main Programs
 
 ### License
 
+This software is licensed under MIT license
 Copyright (c) 2020 **_{William Donovan-Seid}_**
-Licensed under MIT
