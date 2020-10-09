@@ -6,7 +6,7 @@
 
 ## Description
 
-This project was built to help out with tracking bugs and help to remember trick from the past. User can add Project that they have worked on in the past or are working on now. Add Languages, so when you try and do something 2 years from now you can have reminders. Users can search the issue based on any word or fragment. In the issue you can add links to solutions or documentation, link the issue to projects and languages, and add the type or severity of the issue.
+_This is an Epicodus Friday Project on using database basics with MySql to create an MVC web application to help Clair manage her employees (stylists) and their clients._
 
 ## Setup/Installation Requirements
 
