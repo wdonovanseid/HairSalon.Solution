@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using HairSalon.Models;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
@@ -18,6 +20,11 @@ namespace HairSalon.Controllers
     {
       List<Stylist> model = _db.Stylists.ToList();
       return View(model);
+    }
+
+    public ActionResult Create(Stylist stylist)
+    {
+      
     }
   }
 }
