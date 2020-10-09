@@ -72,5 +72,13 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
+    [HttpPost]
+    public ActionResult Search(string search)
+    {
+      List<Stylist> searchList = _db.Stylists.Include(stylists => stylists.Clients).ToList();
+      List<Stylist> model = Stylist.Search(searchList, search);
+      return View(model);
+    }
+
   }
 }

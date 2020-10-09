@@ -3,7 +3,12 @@
   <p>@Html.ActionLink("List of Clients", "Index", "Clients")</p>
   <p>@Html.ActionLink("Home", "Index", "Home")</p>
   <form action="/Clients/Search" method="post">
-    <label>Search by Client Name</label>
+    <label>Search for Client by Name</label>
+    <input class="input" type="text" id="search" name="search">
+    <input type="submit" value="Search" class="btn btn-info buttons" />
+  </form>
+  <form action="/Stylists/Search" method="post">
+    <label>Search for Stylist by Name or Specialty</label>
     <input class="input" type="text" id="search" name="search">
     <input type="submit" value="Search" class="btn btn-info buttons" />
   </form>
